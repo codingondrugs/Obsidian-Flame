@@ -1,0 +1,52 @@
+{
+  "id": "MAP_HIDDEN_CAVES",
+  "name": "Hidden_Caves",
+  "layout": "LAYOUT_HIDDEN_CAVES",
+  "music": "MUS_CAVE",
+  "region_map_section": "MAPSEC_HIDDEN_CAVES",
+  "requires_flash": true,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SHADOW_SYNDICATE",
+      "x": 8,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "HiddenCaves_SyndicateGuard",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE10",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_HIDDEN_CAVES_STATE",
+      "var_value": "0",
+      "script": "HiddenCaves_SecretEvent"
+    }
+  ],
+  "bg_events": []
+}

@@ -1,0 +1,55 @@
+{
+  "id": "MAP_ROUTE_V4",
+  "name": "Route_V4",
+  "layout": "LAYOUT_ROUTE_V4",
+  "music": "MUS_ROUTE110",
+  "region_map_section": "MAPSEC_ROUTE_V4",
+  "requires_flash": false,
+  "weather": "WEATHER_ASHFALL",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_RIFTBURG",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_LAVAFLOW_CITY",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 11,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
+      "movement_range_x": 3,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "RouteV4_TrainerHiker",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_ROUTE_V4_STATE",
+      "var_value": "0",
+      "script": "RouteV4_LavaHazardEvent"
+    }
+  ],
+  "bg_events": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "MAP_EMBER_TOWN",
+  "name": "Ember_Town",
+  "layout": "LAYOUT_EMBER_TOWN",
+  "music": "MUS_RUSTBORO",
+  "region_map_section": "MAPSEC_EMBER_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_ASHFALL",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_GYM",
+  "connections": [
+    {
+      "map": "MAP_ROUTE_V1",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE_V2",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GYM_LEADER_FLINT",
+      "x": 15,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_STAY",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_GYM_LEADER",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EmberTown_GymLeaderFlint",
+      "flag": "FLAG_BADGE01_GET"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 12,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_EMBER_TOWN_GYM",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

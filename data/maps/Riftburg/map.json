@@ -1,0 +1,63 @@
+{
+  "id": "MAP_RIFTBURG",
+  "name": "Riftburg",
+  "layout": "LAYOUT_RIFTBURG",
+  "music": "MUS_LAVENDER",
+  "region_map_section": "MAPSEC_RIFTBURG",
+  "requires_flash": false,
+  "weather": "WEATHER_ASHFALL",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_GYM",
+  "connections": [
+    {
+      "map": "MAP_ROUTE_V3",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE_V4",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GYM_LEADER_STONE",
+      "x": 14,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_STAY",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_GYM_LEADER",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Riftburg_GymLeaderStone",
+      "flag": "FLAG_BADGE04_GET"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_RIFTBURG_GYM",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_RIFTBURG_STATE",
+      "var_value": "0",
+      "script": "Riftburg_BetrayalEvent"
+    }
+  ],
+  "bg_events": []
+}
