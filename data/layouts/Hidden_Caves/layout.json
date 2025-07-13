@@ -1,0 +1,12 @@
+{
+  "id": "LAYOUT_HIDDEN_CAVES",
+  "name": "Hidden_Caves",
+  "width": 15,
+  "height": 15,
+  "primary_tileset": "TILESET_CAVE",
+  "secondary_tileset": "TILESET_FIELD",
+  "border_filepath": "data/layouts/Hidden_Caves/border.bin",
+  "blockdata_filepath": "data/layouts/Hidden_Caves/map.bin",
+  "event_data_filepath": "",
+  "block_metatiles": true
+}

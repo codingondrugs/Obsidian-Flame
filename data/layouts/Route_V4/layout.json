@@ -1,0 +1,12 @@
+{
+  "id": "LAYOUT_ROUTE_V4",
+  "name": "Route_V4",
+  "width": 30,
+  "height": 20,
+  "primary_tileset": "TILESET_ASHFALL",
+  "secondary_tileset": "TILESET_FIELD",
+  "border_filepath": "data/layouts/Route_V4/border.bin",
+  "blockdata_filepath": "data/layouts/Route_V4/map.bin",
+  "event_data_filepath": "",
+  "block_metatiles": true
+}

@@ -1,0 +1,12 @@
+{
+  "id": "LAYOUT_VOLCAN_PEAK",
+  "name": "Volcan_Peak",
+  "width": 20,
+  "height": 20,
+  "primary_tileset": "TILESET_ASHFALL",
+  "secondary_tileset": "TILESET_CAVE",
+  "border_filepath": "data/layouts/Volcan_Peak/border.bin",
+  "blockdata_filepath": "data/layouts/Volcan_Peak/map.bin",
+  "event_data_filepath": "",
+  "block_metatiles": true
+}

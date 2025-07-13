@@ -1,0 +1,12 @@
+{
+  "id": "LAYOUT_RIFTBURG",
+  "name": "Riftburg",
+  "width": 25,
+  "height": 25,
+  "primary_tileset": "TILESET_ASHFALL",
+  "secondary_tileset": "TILESET_INTERIOR",
+  "border_filepath": "data/layouts/Riftburg/border.bin",
+  "blockdata_filepath": "data/layouts/Riftburg/map.bin",
+  "event_data_filepath": "",
+  "block_metatiles": true
+}

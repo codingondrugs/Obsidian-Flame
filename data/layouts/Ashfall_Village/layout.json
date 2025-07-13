@@ -1,0 +1,12 @@
+{
+  "id": "LAYOUT_ASHFALL_VILLAGE",
+  "name": "Ashfall_Village",
+  "width": 20,
+  "height": 20,
+  "primary_tileset": "TILESET_ASHFALL",
+  "secondary_tileset": "TILESET_INTERIOR",
+  "border_filepath": "data/layouts/Ashfall_Village/border.bin",
+  "blockdata_filepath": "data/layouts/Ashfall_Village/map.bin",
+  "event_data_filepath": "",
+  "block_metatiles": true
+}

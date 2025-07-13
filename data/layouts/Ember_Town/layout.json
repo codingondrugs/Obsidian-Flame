@@ -1,0 +1,12 @@
+{
+  "id": "LAYOUT_EMBER_TOWN",
+  "name": "Ember_Town",
+  "width": 25,
+  "height": 25,
+  "primary_tileset": "TILESET_ASHFALL",
+  "secondary_tileset": "TILESET_INTERIOR",
+  "border_filepath": "data/layouts/Ember_Town/border.bin",
+  "blockdata_filepath": "data/layouts/Ember_Town/map.bin",
+  "event_data_filepath": "",
+  "block_metatiles": true
+}
